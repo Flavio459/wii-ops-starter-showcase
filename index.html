@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Wii Ops Starter public portfolio showcase">
+  <title>Wii Ops Starter Showcase</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="shell">
+  <header class="hero">
+    <div>
+      <p class="eyebrow">AGENTIC OPERATIONS · SYNTHETIC DEMO</p>
+      <h1>Wii Ops Starter</h1>
+      <p class="lede">A public-safe control plane for proportional autonomy: preflight, bounded execution, independent verification, evidence and explicit closure.</p>
+    </div>
+    <div class="badge">Canonical WOC remains private</div>
+  </header>
+
+  <section class="principle">
+    <strong>Core principle:</strong> autonomy may increase execution speed, but it never grants additional authority.
+  </section>
+
+  <section class="flow">
+    <span>Task</span><b>→</b><span>Preflight</span><b>→</b><span>Risk + Authority</span><b>→</b><span>Route</span><b>→</b><span>Worker</span><b>→</b><span>Verifier</span><b>→</b><span>Evidence</span><b>→</b><span>Closure</span>
+  </section>
+
+  <section id="summary" class="summary"></section>
+
+  <section class="toolbar">
+    <div>
+      <p class="eyebrow">CONTROL PLANE</p>
+      <h2>Synthetic task queue</h2>
+      <p class="muted">No task below performs a real external action.</p>
+    </div>
+    <select id="filter">
+      <option value="all">All routes</option>
+      <option value="AUTO_ELIGIBLE">Auto eligible</option>
+      <option value="BOUNDED_AUTONOMY">Bounded autonomy</option>
+      <option value="HUMAN_GATE">Human gate</option>
+      <option value="ASSESSMENT">Assessment</option>
+      <option value="BLOCKED">Blocked</option>
+    </select>
+  </section>
+
+  <section id="cards" class="cards"></section>
+
+  <section class="panel">
+    <div class="panelhead">
+      <div>
+        <p class="eyebrow">CLOSURE LAB</p>
+        <h2>Evidence before “done”</h2>
+        <p class="muted">Select a task and simulate the minimum evidence needed for closure.</p>
+      </div>
+      <select id="closure-task"></select>
+    </div>
+    <div id="closure-state" class="closure-state"></div>
+    <div class="actions">
+      <button id="pass-checks">Mark checks passed</button>
+      <button id="add-evidence">Add evidence</button>
+      <button id="verify">Independent verifier pass</button>
+      <button id="human-approve">Simulate human approval</button>
+      <button id="reset" class="secondary">Reset</button>
+    </div>
+  </section>
+
+  <section class="principles">
+    <article><h3>Risk ≠ authority</h3><p>A low-risk change may still require permission if it acts on an external or protected surface. A higher-risk code change may still be reviewable without external authority.</p></article>
+    <article><h3>Fail closed</h3><p>Missing preflight, ambiguous scope, protected configuration or insufficient authorization does not silently degrade into “best effort” execution.</p></article>
+    <article><h3>Closure is a state</h3><p>“Implemented” is not equivalent to “validated.” Completion requires declared checks, evidence and a verifier result appropriate to the task.</p></article>
+  </section>
+
+  <footer>
+    <p>Public showcase by Flávio Souza Barros · Engineering × AI × Automation × Project Systems</p>
+    <p><a href="docs/ARCHITECTURE.md">Architecture</a> · <a href="docs/PUBLICATION_BOUNDARY.md">Publication boundary</a> · <a href="SECURITY.md">Security</a></p>
+  </footer>
+</main>
+<script src="logic.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
