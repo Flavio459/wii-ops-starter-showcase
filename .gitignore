@@ -1,0 +1,8 @@
+.DS_Store
+.env
+.env.*
+*.log
+private/
+runtime/
+traces/
+evidence-private/
