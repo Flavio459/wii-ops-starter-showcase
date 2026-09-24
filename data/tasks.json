@@ -1,0 +1,72 @@
+[
+  {
+    "id":"T-001",
+    "title":"Normalize duplicated documentation",
+    "project":"Synthetic Docs Workspace",
+    "changeRisk":"LOW",
+    "externalEffect":false,
+    "protectedSurface":false,
+    "authorizationPresent":true,
+    "reversible":true,
+    "preflightComplete":true,
+    "scopeClear":true,
+    "checksDeclared":true,
+    "expectedCheck":"Markdown links + duplicate-content check"
+  },
+  {
+    "id":"T-002",
+    "title":"Refactor a bounded validation module",
+    "project":"Synthetic Quality Service",
+    "changeRisk":"MEDIUM",
+    "externalEffect":false,
+    "protectedSurface":false,
+    "authorizationPresent":true,
+    "reversible":true,
+    "preflightComplete":true,
+    "scopeClear":true,
+    "checksDeclared":true,
+    "expectedCheck":"Unit tests + regression fixture"
+  },
+  {
+    "id":"T-003",
+    "title":"Publish a production release",
+    "project":"Synthetic Customer App",
+    "changeRisk":"MEDIUM",
+    "externalEffect":true,
+    "protectedSurface":true,
+    "authorizationPresent":false,
+    "reversible":true,
+    "preflightComplete":true,
+    "scopeClear":true,
+    "checksDeclared":true,
+    "expectedCheck":"Release smoke test + rollback proof"
+  },
+  {
+    "id":"T-004",
+    "title":"Rotate a production credential",
+    "project":"Synthetic Integration",
+    "changeRisk":"HIGH",
+    "externalEffect":true,
+    "protectedSurface":true,
+    "authorizationPresent":false,
+    "reversible":false,
+    "preflightComplete":true,
+    "scopeClear":true,
+    "checksDeclared":true,
+    "expectedCheck":"Credential invalidation + dependent-service verification"
+  },
+  {
+    "id":"T-005",
+    "title":"Investigate an unknown repository state",
+    "project":"Synthetic Legacy Repo",
+    "changeRisk":"UNKNOWN",
+    "externalEffect":false,
+    "protectedSurface":false,
+    "authorizationPresent":false,
+    "reversible":true,
+    "preflightComplete":false,
+    "scopeClear":false,
+    "checksDeclared":false,
+    "expectedCheck":"Assessment only"
+  }
+]
